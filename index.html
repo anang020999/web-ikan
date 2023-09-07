@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anang Aquatic</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- my Style -->
+  <link rel="stylesheet" href="Style.css" />
+
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Anang <span>Aquatic</span>.</a>
+
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="search"><i data-feather="search"></i></a>
+      <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Tenangkan Hati Anda Dengan <span>Ikan Hias</span></h1>
+      <p>Tersedia berbagai macam ikan hias air tawar, dan perlengkapan Aquascape...</p>
+      <a href="https://wa.me/+6281410490185" class="cta" role="button">Hubungi Disini</a>
+    </main>
+
+  </section>
+  <!-- Hero Section end -->
+
+  <!-- about section -->
+  <section id="about" class="about">
+    <h2><span>Tentang </span>Kami</h2>
+
+    <div class="row">
+      <div class="about-img">
+        <img src="img/menu.png" alt="Tentang Kami">
+      </div>
+      <div class="content">
+        <h3>Kenapa Memilih Memilih Toko Kami?</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Eveniet laborum ea, deleniti odio dolor magni. Dignissimos accusantium pariatur a similique illo eum soluta
+          iure dolores repellat architecto, exercitationem nam nemo?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatum,
+          nisi iusto laboriosam explicabo laudantium ea soluta ducimus, dolore, illum in vitae? Repellendus labore
+          dolore laudantium rem porro voluptate delectus.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- menu section -->
+  <section id="menu" class="menu">
+    <h2><span>Menu </span>Kami</h2>
+    <!-- menu section -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, reprehenderit aperiam iste consequuntur
+      cupiditate doloribus?</p>
+
+
+    <!-- Container for the image gallery -->
+    <div class="container">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="img/header-bg.jpeg.jpg" class="img-menu">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="img/glofish.png" class="img-menu">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="img/pbass.png" class="img-menu">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="img/menu-kami.png" class="img-menu">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="img/menu.png" class="img-menu">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="img/background-biru.jpg" class="img-menu">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="img/header-bg.jpeg.jpg" style="width:100%" onclick="currentSlide(1)"
+            alt="Ikan Discus">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/glofish.png" style="width:100%" onclick="currentSlide(2)"
+            alt="Ikan Glowfish">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/pbass.png" style="width:100%" onclick="currentSlide(3)"
+            alt="Ikan Peacok Bass (Pbass)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/menu-kami.png" style="width:100%" onclick="currentSlide(4)"
+            alt="Ikan Discus">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/menu.png" style="width:100%" onclick="currentSlide(5)"
+            alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/background-biru.jpg" style="width:100%" onclick="currentSlide(6)"
+            alt="Snowy Mountains">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- menu and -->
+
+  <!-- kontak kami -->
+  <section id="contact" class="contact">
+    <h2><span>Kontak </span>Kami</h2>
+
+    <div id="form-main">
+    <div id="form-div">
+      <form class="form" id="form1">
+
+        <p class="name">
+          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+            placeholder="Name" id="name" />
+        </p>
+
+        <p class="email">
+          <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email"
+            placeholder="Email" />
+        </p>
+
+        <p class="text">
+          <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment"
+            placeholder="Comment"></textarea>
+        </p>
+
+
+        <div class="submit">
+          <input type="submit" value="SEND" id="button-blue" />
+          <div class="ease"></div>
+        </div>
+      </form>
+    </div>
+
+
+
+    <!-- kontak kami end -->
+
+    <!-- footer -->
+<!-- 
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+      <ul class="menu-footer">
+        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+      </ul>
+      <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+
+    <!-- footer and -->
+
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- my javascipt -->
+    <script src="Main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,585 @@
+.root {
+    --primary: #b6895b;
+    --bg: #010101;
+
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box ;
+outline: none;
+text-decoration: none;
+}
+
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #010101;
+color: #fff;
+min-height: 10000px; 
+
+
+}
+
+/* navbar */
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1,0.8);
+    border-bottom: 1px solid rgb(37, 208, 239);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+    
+}
+
+.navbar .navbar-logo span {
+    color: rgb(199, 247, 10);
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    
+}
+
+.navbar .navbar-nav a:hover {
+    color: rgb(199, 247, 10);
+}
+
+.navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+
+}
+
+.navbar .navbar-extra a:hover{
+    color: rgb(199, 247, 10);
+
+}
+
+
+#hamburger-menu {
+    display:none;
+}
+
+/* Hero section */
+.hero {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     background-image: url('img/header-bg.jpeg.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+}
+
+.hero::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    background: linear-gradient(0deg,rgba(1,1,3,1)7%,rgba(255,255,255,0)25%);
+
+}
+
+.hero .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3 , 7.5);
+    line-height: 1.2;
+}
+
+.hero .content span{
+    font-size: 5rem;
+    color: rgb(199, 247, 10);
+    text-shadow: 1px 1px 3px rgba(1, 1, 3 , 7.5);
+} 
+
+.hero .content p{
+    color:#fff;
+    font-size: 1.8rem;
+    margin-top: 0,8rem;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: rgb(248, 255, 255);
+    /* mix-blend-mode: exclusion; */
+}
+
+.hero .content .cta{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #010101;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px rgba(1, 1, 2 , 0.5);
+
+}
+
+.hero .content a:hover {
+    color: rgb(199, 247, 10);
+}
+
+/* about section */
+.about, 
+.menu,
+.contact {
+    padding: 7rem 7% 1.4rem;
+
+
+
+}
+
+.about h2, 
+.menu h2,
+.contact h2 {
+    color: rgb(199, 247, 10);
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 4rem;
+  
+
+}
+
+.about h2 span, 
+.menu h2 span,
+.contact h2 span {
+    color:#fff;
+}
+
+.about .row {
+    display: flex;
+
+}
+
+.about .row .about-img
+{
+    flex: 1 1 45rem;
+
+}
+
+.about .row .about-img img{
+    width: 100%;
+    height:450px;
+}
+
+.about .row .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+
+}
+
+.about .row .content p{
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 1.4;
+
+}
+
+.menu h2 {
+    margin-bottom: 1rem;
+
+}
+
+.menu p{
+        text-align: center;
+        max-width: 30rem   ;
+        margin: auto;
+        font-weight: 100;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+}
+
+/* menu */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  .img-menu{
+    height:500px;
+    width: 100%;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    font-size: 1em;
+  }
+
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    height: 150px;
+    
+  }
+  
+.ikan {
+    font-size: 1em;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+  /* kontak kami */
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+
+#feedback-page{
+  text-align:center;
+}
+
+#text-feedback{
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color:white;
+  text-align:center;
+}
+
+#form-main{
+  width:100%;
+  float:left;
+  padding-top:5 px; 
+}
+
+#form-div {
+  background-color: rgb(62, 188, 242) ;
+  padding-left:35px;
+  padding-right:35px;
+  padding-top:35px;
+  padding-bottom:50px;
+  width: 520px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-left: -260px;
+}
+
+.feedback-input {
+  opacity:0.9;
+  color:#0493bd;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  border: 3px solid #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.feedback-input:focus{
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+  color:#30aed6;
+  border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#name:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#comment{
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color:white;
+}
+
+#button-blue{
+  font-family: 'Montserrat', Helvetica, Arial,  sans-serif;
+  float:left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #3498db;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#button-blue:hover{
+  background-color: rgba(0,0,0,0);
+  color: #0493bd;
+}
+  
+.submit:hover {
+  color: #3498db;
+}
+  
+.ease {
+  border-top:3px #3c3c3c solid;
+  width: 0px;
+  height: 76px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+  #form-div{
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+  /* kontak end */
+
+/* footer */
+
+
+
+/* media querry */
+/* laptop */
+@media (max-width: 1366px){
+html{
+    font-size: 75%;
+}
+
+}
+ /* tablet */
+ @media (max-width: 785px) {
+    html {
+    font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+        display:inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position:absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: #010101;
+        display:block;
+        margin: 1.5rem;
+        font-size: 2rem;
+
+    }
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img{
+        height:  24rem;
+        object-fit: cover;
+    }
+ }
+
+/* mobile phone */
+@media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+
+    #hamburger-menu {
+        display:inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position:absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 18rem;
+        height: 100vh;
+        transition: 0.3s;
+
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: #010101;
+        display:block;
+        margin: 1.5rem;
+        font-size: 2rem;
+
+    }
+    
+    }
+
